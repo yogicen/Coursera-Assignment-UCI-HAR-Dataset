@@ -1,29 +1,29 @@
 # Coursera-Assignment-UCI-HAR-Dataset
 
 ## Code Book
-test_set = extracted from X_test.txt
-train_set = extracted from X_train.txt
-test_label = extracted from y_test.txt
-train_label = extracted from y_test.txt
-test_subject = extracted from subject_test.txt
-train_subject = extracted from subject_test.txt
+#### test_set = extracted from X_test.txt
+#### train_set = extracted from X_train.txt
+#### test_label = extracted from y_test.txt
+#### train_label = extracted from y_test.txt
+#### test_subject = extracted from subject_test.txt
+#### train_subject = extracted from subject_test.txt
 
-all_set = combining rows from test_set and train_set
-all_label = combining rows from test_label and train_label
-all_subject = combining rows from test_subject and train_subject
-all_data = combining columns from all_set, all_label and all_subject
+#### all_set = combining rows from test_set and train_set
+#### all_label = combining rows from test_label and train_label
+#### all_subject = combining rows from test_subject and train_subject
+#### all_data = combining columns from all_set, all_label and all_subject
 
-features = extracted from features.txt
-wanted_column = chosen column with mean and std
-result = all_data by chosen column
+#### features = extracted from features.txt
+#### wanted_column = chosen column with mean and std
+#### result = all_data by chosen column
 
-activity_labels = extracted from activity_labels.txt
+#### activity_labels = extracted from activity_labels.txt
 
-DT = merging activity_labels, result and features
-dt = copy of DT
+#### DT = merging activity_labels, result and features
+#### dt = copy of DT
 
-levels = for matrix multiplication when creating new columns
-logical = for matrix multiplication when creating new columns
+#### levels = for matrix multiplication when creating new columns
+#### logical = for matrix multiplication when creating new columns
 
 
 ## How does it work?
