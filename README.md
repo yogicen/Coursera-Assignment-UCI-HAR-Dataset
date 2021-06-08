@@ -30,16 +30,27 @@ logical = for matrix multiplication when creating new columns
 ### The Objectives
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set
+3. Uses descriptive activity names to name the activities in the data set.
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ### 1
 Merge the training and test data set using rbind and cbind
-all_set <- rbind(test_set, train_set)
-all_subject <- rbind(test_subject, train_subject)
-setnames(all_subject, "V1", "subject")
-all_label <- rbind(test_label, train_label)
-setnames(all_label, "V1", "activity.label")
-all_data <- cbind(all_set, all_subject, all_label)
-dim(all_data)
+
+### 2
+Use grepl to identify which rows contain mean() and std()
+Create new column which rows containing V + feature.number to match the column names in all_data
+Get all the data from the wanted column
+
+### 3
+Extract activity_labels and put the appropriate column names
+
+### 4
+Merge activity_labels and result
+Melt the merged table
+Merge the merged table with features
+
+### 5
+Make a copy of the previously merged table
+Add various new columns to the dataset by feature column
+Create the new tidy dataset with count and average
